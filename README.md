@@ -1,6 +1,7 @@
 # Complexity & Travis-CI Lab
 
 In this lab, you'll be implementing simple algorithms for checking basic properties of code complexity.
+
 We will also integrate Travis CI.
 
 Two design patterns are of importance here:
