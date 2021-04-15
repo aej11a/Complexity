@@ -1,6 +1,7 @@
 # Complexity & Travis-CI Lab
 
 In this lab, you'll be implementing simple algorithms for checking basic properties of code complexity.
+We will also integrate Travis CI.
 
 Two design patterns are of importance here:
 * A [Builder pattern](https://en.wikipedia.org/wiki/Builder_pattern), which is used to build up state and then finally emit.
