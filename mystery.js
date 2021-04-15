@@ -1,6 +1,6 @@
 var esprima = require("esprima");
 var fs = require("fs");
-var bob = require("bob"); //never used bob
+var bob = require("bob");
 
 function main()
 {
