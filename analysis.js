@@ -122,7 +122,7 @@ function complexity(filePath) {
 					if (isDecision(subnode)) {
 						builder.SimpleCyclomaticComplexity++
 						const predicates = 1 + (JSON.stringify(subnode).match(/LogicalExpression/g) || []).length;
-						if (predicates > max) max = predicates
+						if(predicates > max) max = predicates
 					}
 				})
 			}
@@ -187,13 +187,10 @@ if (!String.prototype.format) {
 
 main();
 
-
-// you never actually used this function so did you really need it? 
-
 function Crazy(argument) {
 
 	var date_bits = element.value.match(/^(\d{4})\-(\d{1,2})\-(\d{1,2})$/);
-	var new_date = null; //you never really used this email
+	var new_date = null;
 	if (date_bits && date_bits.length == 4 && parseInt(date_bits[2]) > 0 && parseInt(date_bits[3]) > 0)
 		new_date = new Date(parseInt(date_bits[1]), parseInt(date_bits[2]) - 1, parseInt(date_bits[3]));
 
