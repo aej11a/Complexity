@@ -71,8 +71,6 @@ function FileBuilder() {
 				"Strings {2}\n"
 			).format(this.FileName, this.ImportCount, this.Strings));
 	}
-
-	exports.fileBuilder = this
 }
 
 // A function following the Visitor pattern.
