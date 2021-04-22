@@ -6,7 +6,7 @@ function main() {
 	var args = process.argv.slice(2);
 
 	if (args.length == 0) {
-		args = ["analysis.js"];
+		args = ["mystery.js"];
 	}
 	var filePath = args[0];
 
@@ -18,6 +18,7 @@ function main() {
 		builder.report();
 	}
 
+	return builders
 }
 
 
@@ -104,7 +105,7 @@ function complexity(filePath) {
 	// Count how many times "Literal" shows up in the AST
 	var stringCount = (JSON.stringify(ast).match(/Literal/g) || []).length;
 	fileBuilder.Strings = stringCount
-
+	exports.getStrings = () => fileBuilder.Strings
 	builders[filePath] = fileBuilder;
 
 	// Tranverse program with a function visitor.
